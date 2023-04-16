@@ -9,10 +9,9 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class appCardDeliveryTest {
 
-
     @Test
     void shouldRegisterCardDelivery(){
-        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = false;
         open("http://localhost:9999");
         $("[placeholder=\"Город\"]").setValue("Кемерово");
         $("[name='name']").setValue("Иванов Иван");
