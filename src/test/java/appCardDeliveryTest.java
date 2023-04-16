@@ -11,7 +11,7 @@ public class appCardDeliveryTest {
 
     @Test
     void shouldRegisterCardDelivery(){
-        Configuration.holdBrowserOpen = false;
+        Configuration.headless = true;
         open("http://localhost:9999");
         $("[placeholder=\"Город\"]").setValue("Кемерово");
         $("[name='name']").setValue("Иванов Иван");
