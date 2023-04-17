@@ -30,5 +30,4 @@ public class AppCardDeliveryTest {
                 .shouldHave(Condition.text("Встреча успешно забронирована на " + planningDate), Duration.ofSeconds(15))
                 .should(Condition.appear);
     }
-
 }
