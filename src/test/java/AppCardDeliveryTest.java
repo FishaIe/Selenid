@@ -18,7 +18,6 @@ public class AppCardDeliveryTest {
 
     @Test
     void shouldRegisterCardDelivery(){
-        Configuration.holdBrowserOpen = true;
         String planningDate = generateDate(6);
         open("http://localhost:9999");
         $("[placeholder=\"Город\"]").setValue("Кемерово");
